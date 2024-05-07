@@ -1,0 +1,16 @@
+run this line in mysql client terminal
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Aks@2024';
+FLUSH PRIVILEGES;
+
+for connection in api node
+#################################################################
+step 1 create table first
+##################
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL
+)
+#################################################################
